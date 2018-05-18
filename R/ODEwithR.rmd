@@ -1,0 +1,38 @@
+---
+title: "ODE with R"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+
+
+## Home=made approach
+
+## ODE with `desolve`
+
+[deSolve](https://cran.r-project.org/web/packages/deSolve/index.html) package
+is commonly used to solve ODE. I recommend you started by looking at the vignettes
+
+- https://cran.r-project.org/web/packages/deSolve/vignettes/compiledCode.pdf
+- https://cran.r-project.org/web/packages/deSolve/vignettes/deSolve.pdf
+
+
+
+
+## ODE with `odeintr`
+
+[`odeint`](http://headmyshoulder.github.io/odeint-v2/) is a C++ library, Timothy H. Keitt (may be a name familiar to some of you)
+has created a R package that wrapps around this library: [odeintr](https://github.com/thk686/odeintr).
+
+Example from the gh project:
+
+
+```{r}
+library(odeintr)
+dxdt = function(x, t) c(x[1] - x[1] * x[2], x[1] * x[2] - x[2])
+obs = function(x, t) c(Prey = x[1], Predator = x[2], Ratio = x[1] / x[2])
+system.time({x = integrate_sys(dxdt, rep(2, 2), 20, 0.01, observer = obs)})
+plot(x[, c(2, 3)], type = "l", lwd = 2, col = "steelblue", main = "Lotka-Volterra Phase Plot")
+```
