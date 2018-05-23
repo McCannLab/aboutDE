@@ -1,5 +1,5 @@
 ---
-title: "ODE with R"
+title: "About Differential Equations"
 output:
   html_document:
     toc: true
@@ -7,8 +7,73 @@ output:
 ---
 
 
+# ODE with R
 
-## Home=made approach
+## 1D example
+
+### Problem
+
+$$\frac{dN}{dt} = rN\left(1-\frac{N}{K}\right) - \frac{BN^2}{N^2 + N_0}$$
+
+
+### Expanding the equation
+
+Non trivial equilibrium:
+
+$$rN\left(1-\frac{N}{K}\right) = \frac{BN^2}{N^2 + N_0}$$
+
+or simply:
+
+$$r\left(1-\frac{N}{K}\right) = \frac{BN}{N^2 + N_0}$$
+
+this yields:
+
+$$-\frac{r}{K}N^3 + rN^2 + \left(r\frac{N_0}{K}-B\right)N - rN_0 = 0$$
+
+let's divide by $\frac{r}{K}$:
+
+$$-N^3 + KN^2 + \left(N_0-K\frac{B}{r}\right)N - KN_0 = 0$$
+
+Assuming $r = 1$, $K = 10$, Below are shown this curve for station
+
+
+```{r}
+library(latex2exp)
+seqN <- seq(-2, 12, .1)
+pol <- function(N, r, K, B, N0) {
+  if (!B) {
+    # attack term does not exits
+    out <- K*N-N*N
+  }  else {
+    if (!N0) {
+      out <- K*N-N*N - B
+    } else out <- -N^3 + K*N*N + (N0-K*(B/r))*N + - K*N0
+  }
+  out
+}
+##
+cust_plot <- function(seqN, r, K, B, N0, main) {
+  plot(seqN, pol(seqN, r, K, B, N0), type = "l", lwd = 2,
+  main = main, xlab = "N", ylab = TeX("\\dot{N}"))
+  abline(h=0, v=c(0,10), lty=2)
+}
+
+cust_plot(seqN, -1, 10, 0, 0, main = "B = 0")
+cust_plot(seqN, -1, 10, 10, 0, main = "B = 5; N0 = 0")
+cust_plot(seqN, -1, 10, 1, 2, main = "B = 1; N0 = 2")
+cust_plot(seqN, -1, 10, 1, 4, main = "B = 1; N0 = 4")
+cust_plot(seqN, -1, 10, 1, 8, main = "B = 1; N0 = 8")
+```
+
+
+
+
+
+
+<br><br><br>
+
+
+## Homemade approach
 
 ## ODE with `desolve`
 
