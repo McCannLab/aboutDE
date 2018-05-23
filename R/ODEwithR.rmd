@@ -26,7 +26,7 @@ is commonly used to solve ODE. I recommend you started by looking at the vignett
 [`odeint`](http://headmyshoulder.github.io/odeint-v2/) is a C++ library, Timothy H. Keitt (may be a name familiar to some of you)
 has created a R package that wrapps around this library: [odeintr](https://github.com/thk686/odeintr).
 
-Example from the gh project:
+Example from the GitHub project page:
 
 
 ```{r}
