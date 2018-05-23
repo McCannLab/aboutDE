@@ -23,7 +23,7 @@ devtools::install_github("inSileco/graphicsutils")
 - scripts:
 
   - `R/RK4.R`: pure R (an naive) implementation of the [Runge–Kutta methods](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods) (order 4) by @KevCaz.
-  - `R/2Dsystems.R` Lotka-Volterra with the `deSolve` package by Torbjorg.
+  - `R/2Dsystems.R` Lotka-Volterra with the `deSolve` package by Torbjorn.
   - `R/vectorField.R`: a code to play with a vector field drawn for the linear system in 2 dimensions by @KevCaz.
   - `R/ODEwithR.Rmd`: let's build up a document to gather some thoughts, see https://mccannlab.github.io/aboutDE/ODEwithR.html
 
