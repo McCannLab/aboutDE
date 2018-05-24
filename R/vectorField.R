@@ -1,4 +1,4 @@
-library(odeint)
+library(odeintr)
 library(graphicutils)
 
 # linear system with ODEint
@@ -31,19 +31,27 @@ intLinear <- function(params, init = c(1,1), mxt=10, dt = 0.01, beta = beta1, se
 
 }
 
-beta1 <- matrix(c(-1,0,0,-1),2)
-beta1b <- matrix(c(-1,0,0, 1),2)
-beta1c <- matrix(c(1,0,0, .2),2)
-beta2 <- matrix(c(0,-1,1,0),2)
-beta2b <- matrix(c(0,-1,2,0),2)
-beta3 <- matrix(c(0.1,-1,1,0.1),2)
-beta4 <- matrix(c(0.1,-1,1,-0.1),2)
+beta1 <- matrix(c(-1, 0, 0, -1), 2)
+beta1b <- matrix(c(-1, 0, 0, 1), 2)
+beta1c <- matrix(c(1, 0, 0, 1), 2)
+##
+beta2 <- matrix(c(0,-1,1,0), 2)
+beta2b <- matrix(c(0,1,1,0), 2)
+beta2c <- matrix(c(0,-1,-1,0), 2)
+##
+beta3 <- matrix(c(0.1,-1,1,0.1), 2)
+beta4 <- matrix(c(-0.1,-1,1,-0.1), 2)
 
 intLinear()
 intLinear(beta = beta1b)
 intLinear(beta = beta1c)
 intLinear(beta = beta2)
+intLinear(beta = beta2b)
+intLinear(beta = beta2c)
+
 intLinear(beta = beta3)
+intLinear(beta = beta4, mxt =100)
+
 
 
 
