@@ -9,7 +9,7 @@ where:
 - `x` is a state variable (*e.g.* a population of one species)
 - `t` stands for time
 - `Θ` includes all the parameters
-- `f` is a transformation 
+- `f` is a transformation
 
 
 ## Simple cases

@@ -9,24 +9,55 @@ where:
 - `X` is a vector of state variables (*e.g.* population size of several species)
 - `t` stands for time
 - `Θ` includes all the parameters
-- `f` is a transformation 
+- `f` is a transformation
 
 
 ## Linear system
 
+### General case
+
+$$
+\left\{
+\begin{array}{l}
+  \dot{x}_1 = \sum_i a_{1,i}x_i\\
+  ... \\
+  \dot{x}_n = \sum_i a_{n,i}x_{i} \\
+  X(0) = X_0
+\end{array}
+\right.
+$$
+
+Using matrices:
+
+$$\dot{X} = AX$$
+
+Linear system in $n$ dimensions.
+
+### Trivial case
+
+If $i \neq j \Rightarrow 0$ then A in diagonal:
 
 
-### ODE with `desolve`
+$$
+\left\{
+\begin{array}{l}
+  \dot{x}_1 = a_{1,1}x_1\\
+  ... \\
+  \dot{x}_n = a_{1,1}x_{n} \\
+  X(0) = X_0
+\end{array}
+\right.
+$$
 
-[deSolve](https://cran.r-project.org/web/packages/deSolve/index.html) package
-is commonly used to solve ODE. I recommend you start by looking at the vignettes
 
-- https://cran.r-project.org/web/packages/deSolve/vignettes/compiledCode.pdf
-- https://cran.r-project.org/web/packages/deSolve/vignettes/deSolve.pdf
+https://en.wikipedia.org/wiki/Diagonalizable_matrix#Diagonalization
 
 
 
-### ODE with `odeintr`
+
+## Examples
+
+### Lotka-Volterra with`odeintr`
 
 [`odeint`](http://headmyshoulder.github.io/odeint-v2/) is a C++ library, Timothy H. Keitt (may be a name familiar to some of you)
 has created a R package that wrapps around this library: [odeintr](https://github.com/thk686/odeintr).

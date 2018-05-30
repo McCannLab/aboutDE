@@ -14,8 +14,20 @@ Among others:
 
 - Python: https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.integrate.ode.html
 
-- R: https://cran.r-project.org/web/packages/deSolve/index.html https://www.r-pkg.org/badges/version/odeintr
-
 - Rust: https://docs.rs/GSL/0.4.26/rgsl/types/ordinary_differential_equations/index.html
 
 - FORTRAN C/C++
+
+
+### R
+
+- R: https://cran.r-project.org/web/packages/deSolve/index.html https://www.r-pkg.org/badges/version/odeintr
+
+
+### ODE with `desolve`
+
+[deSolve](https://cran.r-project.org/web/packages/deSolve/index.html) package
+is commonly used to solve ODE. I recommend you start by looking at the vignettes
+
+- https://cran.r-project.org/web/packages/deSolve/vignettes/compiledCode.pdf
+- https://cran.r-project.org/web/packages/deSolve/vignettes/deSolve.pdf
