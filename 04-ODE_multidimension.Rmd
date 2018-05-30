@@ -54,7 +54,7 @@ Then, all state variables are independent and the answer is obtained by solving
 $n$ times a one-dimensional problem (described in the previous chapter).
 
 
-### Diagonalization
+### Diagonalizations
 
 Now let's go back to the general case and assume that A is a diagonalizable
 matrix (see Diagonalization on [wikipedia](https://en.wikipedia.org/wiki/Diagonalizable_matrix#Diagonalization)),
@@ -84,9 +84,53 @@ par(mfrow = c(2,2))
 for (i in 1:4) intLinear(beta = beta[[i]])
 ```
 
+```{r linear2, fig.width = 9, fig.height = 8}
+beta <- list(
+  matrix(c(0, -1, -1, 1), 2),
+  matrix(c(0, 1, -1, 0), 2),
+  matrix(c(0, -1, 1, 0), 2),
+  matrix(c(0, 1, 1, 0), 2)
+)
+par(mfrow = c(2,2))
+for (i in 1:4) intLinear(beta = beta[[i]])
+```
+
+```{r linear3, fig.width = 9, fig.height = 8}
+beta <- list(
+  matrix(c(0, 1, -1, -1), 2),
+  matrix(c(0, 1, -1, 1), 2),
+  matrix(c(1, 1, -1, 1), 2),
+  matrix(c(-1, 1, -1, 1), 2)
+)
+par(mfrow = c(2,2))
+for (i in 1:4) intLinear(beta = beta[[i]])
+```
+
+```{r linear4, fig.width = 9, fig.height = 8}
+beta <- list(
+  matrix(c(0, 1, -1, -2), 2),
+  matrix(c(0, 1, -1, -1), 2),
+  matrix(c(0, 1, -1, -.5), 2),
+  matrix(c(0, 1, -1, -.1), 2)
+)
+par(mfrow = c(2,2))
+for (i in 1:4) intLinear(beta = beta[[i]], mxt =100)
+```
+
+```{r linear5, fig.width = 9, fig.height = 8}
+beta <- list(
+  matrix(c(0, 2, -1, -.1), 2),
+  matrix(c(0, 1, -1, -.1), 2),
+  matrix(c(0, .5, -1, -.1), 2),
+  matrix(c(0, .1, -1, -.1), 2)
+)
+par(mfrow = c(2,2))
+for (i in 1:4) intLinear(beta = beta[[i]], mxt =100)
+```
 
 
-## Non-Linear system
+
+## Non-Linear systems
 
 
 ### Finding the eigen values
