@@ -1,0 +1,21 @@
+# General considerations  {#overview}
+
+## Few notes about the history
+
+
+
+## Choose your computational tools
+
+Among others:
+
+- Julia: http://docs.juliadiffeq.org/latest/
+
+- Octave: https://octave.org/doc/v4.0.3/Ordinary-Differential-Equations.html
+
+- Python: https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.integrate.ode.html
+
+- R: https://cran.r-project.org/web/packages/deSolve/index.html https://www.r-pkg.org/badges/version/odeintr
+
+- Rust: https://docs.rs/GSL/0.4.26/rgsl/types/ordinary_differential_equations/index.html
+
+- FORTRAN C/C++

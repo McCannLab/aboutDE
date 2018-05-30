@@ -1,0 +1,15 @@
+# Introduction {#intro}
+
+## What for?
+
+A lab note book about Differential Equations.
+
+
+
+
+## Notations
+
+- $\mathbb{N}$: set of natural numbers
+- $\mathbb{R}$: set of real number
+- $\mathbb{C}$: set of imaginary number
+- $\mathbb{K}$: either $\mathbb{R}$ or $\mathbb{C}$

@@ -1,18 +1,34 @@
----
-title: "About Differential Equations"
-output:
-  html_document:
-    toc: true
-    toc_float: true
----
+# Continuous ODE in one dimension
+
+## General terminology
+
+$$\frac{dx}{dt} = \dot{x} = x' = f(x,t, \Theta)$$
+
+where:
+
+- `x` is a state variable (*e.g.* a population of one species)
+- `t` stands for time
+- `Θ` includes all the parameters
+- `f` is a transformation 
 
 
-# ODE with R
+## Simple cases
 
-## 1D example
+$$
+\left\{
+\begin{array}{l}
+  {dx \over dt} = ax,\\
+  x(0) = x_0
+\end{array}
+\right.
+$$
 
-### Problem
+where $a$ is a real number. Note that here Θ = a.
 
+
+
+
+## Study case
 
 Use local stability analysis on the logistic (all equilibria) and analytically calculate lambda. What is the stability response to r?
 For the following Budworm model done by D. Ludwig,
@@ -76,10 +92,3 @@ cust_plot(seqN, -1, 10, 1, 2, main = "B = 1; N0 = 2")
 cust_plot(seqN, -1, 10, 1, 4, main = "B = 1; N0 = 4")
 cust_plot(seqN, -1, 10, 1, 8, main = "B = 1; N0 = 8")
 ```
-
-
-
-
-
-
-<br><br><br>
