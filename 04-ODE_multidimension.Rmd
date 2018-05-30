@@ -58,7 +58,8 @@ matrix (see Diagonalization on [wikipedia](https://en.wikipedia.org/wiki/Diagona
 
 $$A = PDP^{-1}$$
 
-This operation is actually a [change of basis](https://en.wikipedia.org/wiki/Change_of_basis)
+This operation is actually a [change of basis](https://en.wikipedia.org/wiki/Change_of_basis).
+
 
 
 ## Examples

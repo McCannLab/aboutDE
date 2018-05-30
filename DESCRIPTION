@@ -9,5 +9,5 @@ Imports:
   latex2exp,
   odeintr
 Remotes:
-  rstudio/bookdown
+  rstudio/bookdown,
   inSileco/graphicsutils
