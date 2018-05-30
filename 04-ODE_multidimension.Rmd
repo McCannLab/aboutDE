@@ -50,20 +50,22 @@ $$
 $$
 
 Then, all state variables are independent and the answer is obtained by solving
-$n$ times a one-dimensional problem (described in the previous chapter)
+$n$ times a one-dimensional problem (described in the previous chapter).
 
+Now let's go back to the general case and assume that A is a diagonalizable
+matrix (see Diagonalization on [wikipedia](https://en.wikipedia.org/wiki/Diagonalizable_matrix#Diagonalization)),
+*i.e.* that it exits: $P$ and $D$ such as:
 
-https://en.wikipedia.org/wiki/Diagonalizable_matrix#Diagonalization
+$$A = PDP^{-1}$$
 
-
-
+This operation is actually a [change of basis](https://en.wikipedia.org/wiki/Change_of_basis)
 
 
 ## Examples
 
 ### Lotka-Volterra with`odeintr`
 
-[`odeint`](http://headmyshoulder.github.io/odeint-v2/) is a C++ library, Timothy H. Keitt (may be a name familiar to some of you)
+[`odeint`](http://headmyshoulder.github.io/odeint-v2/) is a C++ library, Timothy H. Keitt (may ring the bell to some of you)
 has created a R package that wrapps around this library: [odeintr](https://github.com/thk686/odeintr).
 
 Example from the GitHub project page:

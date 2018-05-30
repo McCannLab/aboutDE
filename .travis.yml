@@ -15,4 +15,4 @@ deploy:
   target_branch: master
   local_dir: _book
   on:
-    branch: dev
+    branch: devel

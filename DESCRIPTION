@@ -7,4 +7,6 @@ Imports:
   deSolve,
   latex2exp,
   odeintr
-Remotes: rstudio/bookdown
+Remotes:
+  rstudio/bookdown
+  inSileco/graphicsutils
