@@ -13,3 +13,6 @@ A lab note book about Differential Equations.
 - $\mathbb{R}$: set of real number
 - $\mathbb{C}$: set of imaginary number
 - $\mathbb{K}$: either $\mathbb{R}$ or $\mathbb{C}$
+
+- $0_n$ null matrix, dimension $n$
+- $I_n$ identity matrix, dimension $n$

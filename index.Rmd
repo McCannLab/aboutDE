@@ -1,5 +1,5 @@
 ---
-title: "ODE for ecologists"
+title: "Differential Equations for ecologists"
 author: "McCann Lab"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -13,6 +13,8 @@ description: "A note book for the McCann Lab theoretical group."
 ---
 
 # Prerequisites {-}
+
+
 
 This book was generated using [bookdown](https://bookdown.org/yihui/bookdown/) [@xie2015],
 Yinhui Xie did an amazing job to document his work and to provide a very helpful
@@ -30,4 +32,15 @@ install.packages("bookdown")
 knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
 ), 'packages.bib')
+```
+
+```{r setup, echo = F}
+knitr::opts_chunk$set(
+  comment = "#>",
+  fig.align = "center",
+  collapse = TRUE,
+  warning = FALSE,
+  message = FALSE
+)
+knitr::read_chunk("R/vectorField.R")
 ```

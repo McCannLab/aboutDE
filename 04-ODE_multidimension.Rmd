@@ -12,6 +12,7 @@ where:
 - `f` is a transformation
 
 
+
 ## Linear system
 
 ### General case
@@ -52,13 +53,50 @@ $$
 Then, all state variables are independent and the answer is obtained by solving
 $n$ times a one-dimensional problem (described in the previous chapter).
 
+
+### Diagonalization
+
 Now let's go back to the general case and assume that A is a diagonalizable
 matrix (see Diagonalization on [wikipedia](https://en.wikipedia.org/wiki/Diagonalizable_matrix#Diagonalization)),
 *i.e.* that it exits: $P$ and $D$ such as:
 
 $$A = PDP^{-1}$$
 
-This operation is actually a [change of basis](https://en.wikipedia.org/wiki/Change_of_basis).
+This operation is a [change of basis](https://en.wikipedia.org/wiki/Change_of_basis),
+we actually assume that it exists a basis in which our problem is as simple as the trivial
+case, $P$ is the matrix that does the conversion. If our
+
+
+### Graphical examples
+
+```{r loadlinear, echo = F}
+<<linear>>
+```
+
+```{r linear1, fig.width = 9, fig.height = 8}
+beta <- list(
+  matrix(c(-1, 0, 0, -1), 2),
+  matrix(c(1, 0, 0, -1), 2),
+  matrix(c(-1, 0, 0, 1), 2),
+  matrix(c(1, 0, 0, 1), 2)
+)
+par(mfrow = c(2,2))
+for (i in 1:4) intLinear(beta = beta[[i]])
+```
+
+
+
+## Non-Linear system
+
+
+### Finding the eigen values
+
+$$AX = \lambda X$$
+
+Solutions of:
+
+$$\left(A - \lambda I_n\right) X  = 0_n$$
+
 
 
 

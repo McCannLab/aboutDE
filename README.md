@@ -1,5 +1,6 @@
 # aboutDE
 
+[![Build Status](https://travis-ci.org/McCannLab/aboutDE.svg?branch=devel)](https://travis-ci.org/McCannLab/aboutDE)
 
 Let's gather here resources about Differential Equations to share among our
 theoretical group.

@@ -1,11 +1,8 @@
-library(odeintr)
-library(graphicutils)
-
+## @knitr linear
 # linear system with ODEint
-
-
-
-intLinear <- function(params, init = c(1,1), mxt=10, dt = 0.01, beta = beta1, seqx = seq(-2,2,.41), seqy = seq(-2,2,.41)) {
+library(odeintr)
+library(graphicsutils)
+intLinear <- function(init = c(1,1), mxt=10, dt = 0.01, beta = beta1, seqx = seq(-2,2,.41), seqy = seq(-2,2,.41)) {
 
   systLin <- function(X, t){
      Y <- matrix(0,ncol=2)
@@ -14,13 +11,12 @@ intLinear <- function(params, init = c(1,1), mxt=10, dt = 0.01, beta = beta1, se
      return(Y)
   }
 
-  #
+  ##
   obs <- function(x, t) c(sp1 = x[1], sp2 = x[2])
   x <- integrate_sys(systLin, init, mxt, dt, observer = obs)
-
   ##
   par(mar=c(1,1,1,1))
-  plot0(c(-2,2),c(-2,2))
+  plot0(c(-2,2), c(-2,2))
    vecfield2d(coords=expand.grid(seqx, seqy), FUN=systLin,
       cex.x=0.35, cex.arr=0.25,
       border=NA,cex.hh=1, cex.shr=0.6, col=8, add = T)
@@ -28,8 +24,10 @@ intLinear <- function(params, init = c(1,1), mxt=10, dt = 0.01, beta = beta1, se
     points(init[1], init[2], col = "#207966", pch =19, cex = 2)
     lines(x$sp1, x$sp2, col = "#207966", lwd = 2)
   abline(v=0,h=0)
-
 }
+## @knitr end_linear
+
+
 
 beta1 <- matrix(c(-1, 0, 0, -1), 2)
 beta1b <- matrix(c(-1, 0, 0, 1), 2)
@@ -42,7 +40,8 @@ beta2c <- matrix(c(0,-1,-1,0), 2)
 beta3 <- matrix(c(0.1,-1,1,0.1), 2)
 beta4 <- matrix(c(-0.1,-1,1,-0.1), 2)
 
-intLinear()
+beta1 <- matrix(c(-1, 0, 0, -1), 2)
+intLinear(beta = beta1)
 intLinear(beta = beta1b)
 intLinear(beta = beta1c)
 intLinear(beta = beta2)
