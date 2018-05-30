@@ -2,5 +2,9 @@ Package: placeholder
 Type: Book
 Title: Does not matter.
 Version: 0.0.1
-Imports: bookdown
+Imports:
+  bookdown,
+  deSolve,
+  latex2exp,
+  odeintr
 Remotes: rstudio/bookdown

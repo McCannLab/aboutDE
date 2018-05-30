@@ -37,7 +37,7 @@ $$\frac{dN}{dt} = rN\left(1-\frac{N}{K}\right) - \frac{BN^2}{N^2 + N_0}$$
 
  where the budworm, N, grows logistical but is consumed by a constant amount of predators (density B). Using dynamical systems theory: i) find local equilibria for K and B (assume r=1);  ii) solve for the local stability of all relevant equilibria as a function of budworm carrying capacity, K, and the predator density, B. What bifurcations do we expect and when?
 
-Hint: for insight it may help to do this graphically (and produce code dN/dt to check) consider the growth function (logistic term: rN(1-N/K)) and the mortality function (– BN2/(N2+No)) separately (i.e., note that where the growth function crosses the mortality function we have equilibria: plotting N versus these rates or terms of F(N) may therefore be useful).
+*Hint*: for insight it may help to do this graphically (and produce code dN/dt to check) consider the growth function (logistic term: rN(1-N/K)) and the mortality function (– BN2/(N2+No)) separately (i.e., note that where the growth function crosses the mortality function we have equilibria: plotting N versus these rates or terms of F(N) may therefore be useful).
 
 
 

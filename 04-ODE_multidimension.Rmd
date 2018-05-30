@@ -49,8 +49,12 @@ $$
 \right.
 $$
 
+Then, all state variables are independent and the answer is obtained by solving
+$n$ times a one-dimensional problem (described in the previous chapter)
+
 
 https://en.wikipedia.org/wiki/Diagonalizable_matrix#Diagonalization
+
 
 
 
