@@ -2,17 +2,21 @@
 
 ## What for?
 
-A lab note book about Differential Equations.
+A notebook about Differential Equations to gather note related to our meetings. 
 
 
 
 
 ## Notations
 
+### Sets
+
 - $\mathbb{N}$: set of natural numbers
 - $\mathbb{R}$: set of real number
 - $\mathbb{C}$: set of imaginary number
 - $\mathbb{K}$: either $\mathbb{R}$ or $\mathbb{C}$
+
+### Matrices
 
 - $0_n$ null matrix, dimension $n$
 - $I_n$ identity matrix, dimension $n$

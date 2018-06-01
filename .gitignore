@@ -1,4 +1,6 @@
 /R/*.html
+/tmp/
+
 .Rproj.user
 .Rhistory
 .RData
