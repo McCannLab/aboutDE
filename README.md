@@ -40,3 +40,8 @@ devtools::install_github("inSileco/graphicsutils")
 - :video_camera: multimedia:
 
   - http://www.chaos-math.org/en: CHAOS A MATHEMATICAL ADVENTURE
+
+
+## Tout Doux list
+
+- a commented list of foundational papers that use dynamical

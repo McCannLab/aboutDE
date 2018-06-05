@@ -1,6 +1,6 @@
-# ODE in two dimensions and more
+# ODE in multi-dimensions
 
-## General terminology
+## Terminology
 
 $$\dot{X} = f(X, t, \Theta)$$
 
@@ -9,11 +9,14 @@ where:
 - `X` is a vector of state variables (*e.g.* population size of several species)
 - `t` stands for time
 - `Θ` includes all the parameters
-- `f` is a transformation
+- `f` is a multi-dimensional function
 
 
 
 ## Linear system
+
+Function `f` and its parameters `\theta`  
+
 
 ### General case
 
@@ -52,6 +55,7 @@ $$
 
 Then, all state variables are independent and the answer is obtained by solving
 $n$ times a one-dimensional problem (described in the previous chapter).
+
 
 
 ### Diagonalizations

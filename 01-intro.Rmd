@@ -2,8 +2,16 @@
 
 ## What for?
 
-A notebook about Differential Equations to gather note related to our meetings. 
+A notebook about Differential Equations to gather note related to our meetings.
 
+
+
+## General mathematical concepts
+
+- Sets
+- Functions
+- matrices
+- morphisms
 
 
 

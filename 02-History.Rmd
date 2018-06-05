@@ -1,0 +1,229 @@
+# Brief history of dynamical systems theory  {#overview}
+
+
+## Early development
+
+Generalization of the tangent.
+
+- P. de Fermat (1607-1665)
+- I. Barrow (1630-1677)
+- I. Newton (1642-1727)
+- G. W. Leibnitz (1646-1716)
+- B. Taylor (1685-1731)
+- L. Euler (1707-1783) First to solve differential equation first order (1739)
+- J-L. Lagrange (1736-1813)
+- Riccati equation https://en.wikipedia.org/wiki/Riccati_equation
+
+
+### Limit concept
+
+- J. L. Cauchy (1789-1857),  
+- K. T. W. Weierstrass (1815-1897) et
+- R. Lipschitz (1832-1903)
+
+
+http://www.scholarpedia.org/article/History_of_dynamical_systems
+
+### Using geometry
+
+- L. I. Fuchs (1833-1902)
+- H. Poincaré (1854-1912),
+- Stephen Smale https://en.wikipedia.org/wiki/Stephen_Smale (1930 -)
+- Birkhoff
+
+This was a big step forwards to find solutions even for complex system (using differential
+geometry). But things got a bit more tricky when chaos was discover.
+
+
+### Chaos
+
+- A. Turing (1912-1954)
+- E. Lorenz (1907-2008)
+- Li
+- Lyapunov
+
+
+#### Structural stability and catastrophe theory
+
+- R. Thom (1923-2002)
+- E. C. Zeeman FRS (1925 – 2016)
+- A. Andronov (1901-1952)
+- L. Pontryagin (1908-1988).}
+
+
+### Foliation
+
+https://en.wikipedia.org/wiki/Foliation
+
+- C. Ehresmann (1905-1979)
+- G. H. Reeb (1920-1993)
+
+
+### Ref - Math
+
+- Lyapunov AM (1992) The general problem of the stability of motion. International Journal of
+Control 55 :531–534.
+
+- Tao T, Vu V, Krishnapur M (2010) Random matrices : Universality of esds and the circular law.
+The Annals of Probability 38 :2023–2065.
+
+- Stoll A (1998) Tangente à une courbe : résoudre des problèmes par le nouvement. Repères -
+IREM 30 :95–109.
+
+- Lorenz EN (1963) Deterministic nonperiodic flow. Journal of the Atmospheric Sciences
+20 :130–141.
+
+- Li Ty, Yorke JA (1975) Period three implies chaos. The American Mathematical Monthly
+82 :985. 4
+
+- Logofet DO (2005) Stronger-than-lyapunov notions of matrix stability, or how “flowers” help
+solve problems in mathematical ecology. Linear Algebra and its Applications 398 :75–100.
+
+- Tao T, Vu VAN (1991) Random matrices : the circular law. pp 1–46.
+
+
+## Ref - Ecology
+
+
+- Volterra V (1926) Fluctuations in the abundance of a species considered mathematically. Na-
+ture 118 :558–560.
+
+-  Elton C, Nicholson M (1942) The ten-year cycle in numbers of the lynx in canada. The Journal
+of Animal Ecology 11 :215.
+
+-  Gause G (1932) Experimental studies on the struggle for existence i. mixed population of two
+species of yeast. Journal of Experimental Biology 9 :389–402.
+
+- Gardner MR, Ashby WR (1970) Connectance of large dynamic (cybernetic) systems : Critical
+values for stability. Nature 228 :784–784.
+
+- Holling CS (1959) The components of predation as revealed by a study of small-mammal
+predation of the european pine sawfly.
+
+- May RM (1972) Will a large complex system be stable ? Nature 238 :413–414.
+
+- Allesina S, Tang S (2012) Stability criteria for complex ecosystems. Nature 483 :205–8.
+
+- Rohr RP, Saavedra S, Bascompte J (2014) On the structural stability of mutualistic systems.
+Science 345 :1253497–1253497.
+
+- GF Fussmann et al. (2000), "Crossing the Hopf Bifurcation in a Live Predator-Prey System"
+
+- Costantino R, Desharnais R, Cushing J, Dennis B (1997) Chaotic dynamics in an insect population. Science (New York, N.Y.) 275 :389–91. 4
+
+- McCann KS (2000) The diversity-stability debate. Nature 405 :228–33. 9, 10, 13
+31
+
+- Montoya JM, Woodward G, Emmerson MC, Solé RV (2009) Press perturbations and indirect
+effects in real food webs. Ecology 90 :2426–33. 10
+
+- Ives AR, Carpenter SR (2007) Stability and diversity of ecosystems. Science (New York, N.Y.)
+317 :58–62. 10, 26
+
+- Bacaër N (2008) Histoire de mathématiques et de populations p 211.
+
+-  Caswell H, Neubert MG (2005) Reactivity and transient dynamics of discrete-time ecological
+systems. Journal of Difference Equations and Applications 11 :295–310.
+
+- Pimm SL, Lawton JH (1978) On feeding on more than one trophic level. Nature 275 :542–544.
+12
+
+- Yodzis P (1981) The stability of real ecosystems. Nature 289 :674–676
+
+
+- McCann K, Hastings A, Huxel GR (1998) Weak trophic interactions and the balance of nature.
+Nature 395 :794–798. 13
+32
+
+- Berlow EL (1999) Strong effects of weak interactions in ecological communities. 13
+
+- Wootton JT (1994) The nature and consequences of indirect effects in ecological communi-
+ties. Annual Review of Ecology and Systematics 25 :443–466. 13
+
+- Rooney N, McCann K, Gellner G, Moore JC (2006) Structural asymmetry and the stability of
+diverse food webs. Nature 442 :265–9. 13
+
+- Schneider FD, Scheu S, Brose U (2012) Body mass constraints on feeding rates determine the
+consequences of predator loss. Ecology letters 15 :436–43. 13
+
+- Jackson JB, et al. (2001) Historical overfishing and the recent collapse of coastal ecosystems.
+Science (New York, N.Y.) 293 :629–37. 13
+
+- Estes Ja, et al. (2011) Trophic downgrading of planet earth. Science (New York, N.Y.) 333 :301–6.
+
+- Ripple WJ, Beschta RL (2003) Wolf reintroduction, predation risk, and cottonwood recovery
+in yellowstone national park. Forest Ecology and Management 184 :299–313.
+
+- Kéfi S, et al. (2007) Spatial vegetation patterns and imminent desertification in mediterranean
+arid ecosystems. Nature 449 :213–7.
+
+- Allesina S, Tang S (2012) Stability criteria for complex ecosystems. Nature 483 :205–208.
+
+- Tang S, Pawar S, Allesina S (2014) Correlation between interaction strengths drives stability
+in large ecological networks supporting information organization of the supporting informa-
+tion. 14
+
+- Brown JH, Gillooly JF, Allen AP, Savage VM, West GB (2004) Toward a metabolic theory of
+ecology. Ecology 85 :1771–1789.
+
+- Thébault E, Fontaine C (2010) Stability of ecological communities and the architecture of
+mutualistic and trophic networks. Science (New York, N.Y.) 329 :853–6.
+
+- Saavedra S, Stouffer DB, Uzzi B, Bascompte J (2011) Strong contributors to
+network persistence are the most vulnerable to extinction. Nature 478 :233–5.
+
+- James A, Pitchford JW, Plank MJ (2012) Disentangling nestedness from models of ecological
+complexity. Nature 487 :227–30. 15
+
+- Saavedra S, Stouffer DB (2013) Disentangling nestedness" disentangled. Nature 500 :E1–2.
+
+- Kéfi S, et al. (2012) More than a meal. . . integrating non-feeding interactions into food webs.
+Ecology letters 15 :291–300.
+
+- Tang S, Allesina S (2014) Reactivity and stability of large ecosystems. Frontiers in Ecology and
+Evolution 2 :1–8.
+
+- Neubert MG, Caswell H (1997) Alternatives to resilience for measuring the responses of eco-
+logical systems to perturbations. Ecology 78 :653–665.
+
+- Bastolla U, et al. (2009) The architecture of mutualistic networks minimizes competition and
+increases biodiversity. Nature 458 :1018–20.
+
+- Säterberg T, Sellman S, Ebenman B (2013) High frequency of functional extinctions in ecolo-
+gical networks. Nature 499 :468–70.
+
+- Knight TM, McCoy MW, Chase JM, McCoy Ka, Holt RD (2005) Trophic cascades across ecosystems. Nature 437 :880–3.
+
+- Yoshida T, Jones LE, Ellner SP, Fussmann GF, Hairston NG (2003) Rapid evolution drives eco-
+logical dynamics in a predator-prey system. Nature 424 :303–6.
+
+
+
+
+## Choose your computational tools
+
+Among others:
+
+- Julia: http://docs.juliadiffeq.org/latest/
+
+- Octave: https://octave.org/doc/v4.0.3/Ordinary-Differential-Equations.html
+
+- Python: https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.integrate.ode.html
+
+- Rust: https://docs.rs/GSL/0.4.26/rgsl/types/ordinary_differential_equations/index.html
+
+- FORTRAN C/C++
+
+
+### R
+
+- R: https://cran.r-project.org/web/packages/deSolve/index.html https://www.r-pkg.org/badges/version/odeintr
+
+
+### ODE with `desolve`
+
+[deSolve](https://cran.r-project.org/web/packages/deSolve/index.html) package
+is commonly used to solve ODE. I recommend you start by looking at the vignettes
+
+- https://cran.r-project.org/web/packages/deSolve/vignettes/compiledCode.pdf
+- https://cran.r-project.org/web/packages/deSolve/vignettes/deSolve.pdf

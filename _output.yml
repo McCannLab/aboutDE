@@ -3,9 +3,9 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li><a href="./">Differential Equations for ecologists</a></li>
+        <li> <a href="./">Differential Equations for ecologists</a> </li>
       after: |
-        <li><a href="https://github.com/McCannLab/aboutDE" target="blank">Published with bookdown</a></li>
+        <li><a href="https://github.com/McCannLab/aboutDE" target="blank">Published with bookdown on <i class="fa fa-github" aria-hidden="true"></i> </a></li>
     edit: https://github.com/McCannLab/aboutDE/edit/devel/%s
     download: ["pdf", "epub"]
 bookdown::pdf_book:

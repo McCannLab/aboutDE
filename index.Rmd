@@ -15,17 +15,19 @@ description: "A note book for the McCann Lab theoretical group."
 # Prerequisites {-}
 
 
-
 This book was generated using [bookdown](https://bookdown.org/yihui/bookdown/) [@xie2015],
 Yinhui Xie did an amazing job to document his work and to provide a very helpful
-minimal example at https://github.com/rstudio/bookdown-demo. To install
-`bookdown`:
+minimal example at https://github.com/rstudio/bookdown-demo.
 
-```{r eval=FALSE}
-install.packages("bookdown")
-# or the development version
-# devtools::install_github("rstudio/bookdown")
+R packages used throughout the book:
+
+```{r}
+library(latex2exp)
+library(odeintr)
 ```
+
+
+
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
