@@ -1,5 +1,6 @@
-# Brief history of dynamical systems theory  {#overview}
+# Brief history of dynamical systems theory {#overview}
 
+- http://www.scholarpedia.org/article/History_of_dynamical_systems
 
 ## Early development
 
@@ -17,12 +18,12 @@ Generalization of the tangent.
 
 ### Limit concept
 
-- J. L. Cauchy (1789-1857),  
+- J. L. Cauchy (1789-1857),
 - K. T. W. Weierstrass (1815-1897) et
 - R. Lipschitz (1832-1903)
 
 
-http://www.scholarpedia.org/article/History_of_dynamical_systems
+
 
 ### Using geometry
 

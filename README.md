@@ -40,6 +40,8 @@ devtools::install_github("inSileco/graphicsutils")
 - :video_camera: multimedia:
 
   - http://www.chaos-math.org/en: CHAOS A MATHEMATICAL ADVENTURE
+  - https://www.youtube.com/watch?v=kjBOesZCoqc&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab
+
 
 
 ## Tout Doux list

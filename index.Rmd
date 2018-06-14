@@ -46,3 +46,6 @@ knitr::opts_chunk$set(
 )
 knitr::read_chunk("R/vectorField.R")
 ```
+
+
+https://www.youtube.com/watch?v=kjBOesZCoqc&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab

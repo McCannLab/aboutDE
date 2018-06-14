@@ -1,30 +1,8 @@
 # Introduction {#intro}
 
-## What for?
+## What is this documemt for?
 
 A notebook about Differential Equations to gather note related to our meetings.
 
 
-
-## General mathematical concepts
-
-- Sets
-- Functions
-- matrices
-- morphisms
-
-
-
-## Notations
-
-### Sets
-
-- $\mathbb{N}$: set of natural numbers
-- $\mathbb{R}$: set of real number
-- $\mathbb{C}$: set of imaginary number
-- $\mathbb{K}$: either $\mathbb{R}$ or $\mathbb{C}$
-
-### Matrices
-
-- $0_n$ null matrix, dimension $n$
-- $I_n$ identity matrix, dimension $n$
+## What is covered?

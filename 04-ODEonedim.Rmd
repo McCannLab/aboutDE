@@ -26,6 +26,13 @@ $$
 where $a$ is a real number. Note that here Θ = a.
 
 
+- Phase portrait
+- star nodes
+- non-isolated fixed points
+- stable node
+- saddle node
+- different rates
+
 
 
 ## Study case

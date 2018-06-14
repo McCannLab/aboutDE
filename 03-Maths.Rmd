@@ -1,0 +1,107 @@
+# Mathematical prerequisites
+
+
+## Notations
+
+### Sets
+
+- $\mathbb{N}$: set of natural numbers
+- $\mathbb{R}$: set of real number
+- $\mathbb{C}$: set of imaginary number
+- $\mathbb{K}$: either $\mathbb{R}$ or $\mathbb{C}$
+
+### Matrices
+
+- $0_n$ null matrix, dimension $n$
+- $I_n$ identity matrix, dimension $n$
+
+- eigen value
+- eigen vectors
+- trace
+- determinant
+
+- close or open circle
+- spiral outward / inward / center
+
+
+```r
+seqx <- seq(0, 1, .01)
+plot(seqx, se)
+```
+
+
+
+## Equations
+
+### Order 2
+
+#### General equation
+
+$$ ax^2 + bx + c = 0 $$
+
+where $a, b, c$ are real numbers.
+
+
+
+#### Solution
+
+$$(S) \iff x^2 + \frac{b}{a}x + \frac{c}{a} = 0$$
+
+$$(S) \iff \left( x + \frac{b}{2a} \right)^2 - \left(\frac{b}{a}\right)^2 + \frac{c}{a} = 0$$
+
+$$(S) \iff \left( x + \frac{b}{2a} \right)^2 - \left(\frac{b}{2a}\right)^2 + \frac{c}{a} = 0$$
+
+$$(S) \iff \left( x + \frac{b}{2a} \right)^2 - \frac{b^2 + 4ac}{4a^2} = 0$$
+
+$$(S) \iff \left( x + \frac{b}{2a} \right) = \pm \frac{\sqrt{b^2 + 4ac}}{2a} = 0$$
+
+So:
+
+$$x = \frac{-b \pm \sqrt{b^2 + 4ac}}{2a} $$
+
+Note that $b^2 + 4ac$ is called the [discriminant](https://en.wikipedia.org/wiki/Discriminant).
+
+
+#### Example: the golden ratio
+
+
+Never heard about it? Have a look at the [wikipedia page](https://en.wikipedia.org/wiki/Golden_ratio)
+
+So basically the golden ration verifies:
+
+$$ \frac{b}{a+b} = \frac{a}{b} $$
+
+which is equivalent to:
+
+$$ b^2 - ab - a^2 = 0 $$
+
+
+Let's assume $a = 1$ and we are looking for $b$, solutions are then:
+
+$$ b^2 - b - 1 = 0 $$
+
+
+$$ b = \frac{1 \pm \sqrt{5}}{2} $$
+
+
+The positive solution is the golden ratio!
+
+
+
+
+
+## Change of the basis
+
+
+## Eigen value
+
+### Trick in 2 D
+
+lamda1 + lamda2 = trace
+lamba1 lambda2 = determinate
+
+
+### Ressources
+
+  - CHAOS A MATHEMATICAL ADVENTURE: http://www.chaos-math.org/en
+  - Essence of linear algebra on youtube: https://www.youtube.com/watch?v=kjBOesZCoqc&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab
