@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Differential Equations for ecologists</title>
+  <meta name="description" content="A note book for the McCann Lab theoretical group.">
+  <meta name="generator" content="bookdown 0.7.13 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Differential Equations for ecologists" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A note book for the McCann Lab theoretical group." />
+  <meta name="github-repo" content="McCannLab/aboutDE" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Differential Equations for ecologists" />
+  
+  <meta name="twitter:description" content="A note book for the McCann Lab theoretical group." />
+  
+
+<meta name="author" content="McCann Lab">
+
+
+<meta name="date" content="2018-07-12">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="mathematical-prerequisites.html">
+<link rel="next" href="ode-in-multi-dimensions.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li> <a href="./">Differential Equations for ecologists</a> </li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prerequisites</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#what-is-this-documemt-for"><i class="fa fa-check"></i><b>1.1</b> What is this documemt for?</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#what-is-covered"><i class="fa fa-check"></i><b>1.2</b> What is covered?</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>2</b> Brief history of dynamical systems theory</a><ul>
+<li class="chapter" data-level="2.1" data-path="overview.html"><a href="overview.html#early-development"><i class="fa fa-check"></i><b>2.1</b> Early development</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="overview.html"><a href="overview.html#limit-concept"><i class="fa fa-check"></i><b>2.1.1</b> Limit concept</a></li>
+<li class="chapter" data-level="2.1.2" data-path="overview.html"><a href="overview.html#using-geometry"><i class="fa fa-check"></i><b>2.1.2</b> Using geometry</a></li>
+<li class="chapter" data-level="2.1.3" data-path="overview.html"><a href="overview.html#chaos"><i class="fa fa-check"></i><b>2.1.3</b> Chaos</a></li>
+<li class="chapter" data-level="2.1.4" data-path="overview.html"><a href="overview.html#foliation"><i class="fa fa-check"></i><b>2.1.4</b> Foliation</a></li>
+<li class="chapter" data-level="2.1.5" data-path="overview.html"><a href="overview.html#ref---math"><i class="fa fa-check"></i><b>2.1.5</b> Ref - Math</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="overview.html"><a href="overview.html#ref---ecology"><i class="fa fa-check"></i><b>2.2</b> Ref - Ecology</a></li>
+<li class="chapter" data-level="2.3" data-path="overview.html"><a href="overview.html#choose-your-computational-tools"><i class="fa fa-check"></i><b>2.3</b> Choose your computational tools</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="overview.html"><a href="overview.html#r"><i class="fa fa-check"></i><b>2.3.1</b> R</a></li>
+<li class="chapter" data-level="2.3.2" data-path="overview.html"><a href="overview.html#ode-with-desolve"><i class="fa fa-check"></i><b>2.3.2</b> ODE with <code>desolve</code></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="mathematical-prerequisites.html"><a href="mathematical-prerequisites.html"><i class="fa fa-check"></i><b>3</b> Mathematical prerequisites</a><ul>
+<li class="chapter" data-level="3.1" data-path="mathematical-prerequisites.html"><a href="mathematical-prerequisites.html#notations"><i class="fa fa-check"></i><b>3.1</b> Notations</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="mathematical-prerequisites.html"><a href="mathematical-prerequisites.html#sets"><i class="fa fa-check"></i><b>3.1.1</b> Sets</a></li>
+<li class="chapter" data-level="3.1.2" data-path="mathematical-prerequisites.html"><a href="mathematical-prerequisites.html#matrices"><i class="fa fa-check"></i><b>3.1.2</b> Matrices</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="mathematical-prerequisites.html"><a href="mathematical-prerequisites.html#equations"><i class="fa fa-check"></i><b>3.2</b> Equations</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="mathematical-prerequisites.html"><a href="mathematical-prerequisites.html#order-2"><i class="fa fa-check"></i><b>3.2.1</b> Order 2</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="mathematical-prerequisites.html"><a href="mathematical-prerequisites.html#change-of-the-basis"><i class="fa fa-check"></i><b>3.3</b> Change of the basis</a></li>
+<li class="chapter" data-level="3.4" data-path="mathematical-prerequisites.html"><a href="mathematical-prerequisites.html#eigen-value"><i class="fa fa-check"></i><b>3.4</b> Eigen value</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="mathematical-prerequisites.html"><a href="mathematical-prerequisites.html#trick-in-2-d"><i class="fa fa-check"></i><b>3.4.1</b> Trick in 2 D</a></li>
+<li class="chapter" data-level="3.4.2" data-path="mathematical-prerequisites.html"><a href="mathematical-prerequisites.html#ressources"><i class="fa fa-check"></i><b>3.4.2</b> Ressources</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="continuous-ode-in-one-dimension.html"><a href="continuous-ode-in-one-dimension.html"><i class="fa fa-check"></i><b>4</b> Continuous ODE in one dimension</a><ul>
+<li class="chapter" data-level="4.1" data-path="continuous-ode-in-one-dimension.html"><a href="continuous-ode-in-one-dimension.html#general-terminology"><i class="fa fa-check"></i><b>4.1</b> General terminology</a></li>
+<li class="chapter" data-level="4.2" data-path="continuous-ode-in-one-dimension.html"><a href="continuous-ode-in-one-dimension.html#linear-case"><i class="fa fa-check"></i><b>4.2</b> Linear case</a></li>
+<li class="chapter" data-level="4.3" data-path="continuous-ode-in-one-dimension.html"><a href="continuous-ode-in-one-dimension.html#study-case"><i class="fa fa-check"></i><b>4.3</b> Study case</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="continuous-ode-in-one-dimension.html"><a href="continuous-ode-in-one-dimension.html#expanding-the-equation"><i class="fa fa-check"></i><b>4.3.1</b> Expanding the equation</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="ode-in-multi-dimensions.html"><a href="ode-in-multi-dimensions.html"><i class="fa fa-check"></i><b>5</b> ODE in multi-dimensions</a><ul>
+<li class="chapter" data-level="5.1" data-path="ode-in-multi-dimensions.html"><a href="ode-in-multi-dimensions.html#terminology"><i class="fa fa-check"></i><b>5.1</b> Terminology</a></li>
+<li class="chapter" data-level="5.2" data-path="ode-in-multi-dimensions.html"><a href="ode-in-multi-dimensions.html#linear-system"><i class="fa fa-check"></i><b>5.2</b> Linear system</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="ode-in-multi-dimensions.html"><a href="ode-in-multi-dimensions.html#general-case"><i class="fa fa-check"></i><b>5.2.1</b> General case</a></li>
+<li class="chapter" data-level="5.2.2" data-path="ode-in-multi-dimensions.html"><a href="ode-in-multi-dimensions.html#trivial-case"><i class="fa fa-check"></i><b>5.2.2</b> Trivial case</a></li>
+<li class="chapter" data-level="5.2.3" data-path="ode-in-multi-dimensions.html"><a href="ode-in-multi-dimensions.html#diagonalizations"><i class="fa fa-check"></i><b>5.2.3</b> Diagonalizations</a></li>
+<li class="chapter" data-level="5.2.4" data-path="ode-in-multi-dimensions.html"><a href="ode-in-multi-dimensions.html#graphical-examples"><i class="fa fa-check"></i><b>5.2.4</b> Graphical examples</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="ode-in-multi-dimensions.html"><a href="ode-in-multi-dimensions.html#non-linear-systems"><i class="fa fa-check"></i><b>5.3</b> Non-Linear systems</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="ode-in-multi-dimensions.html"><a href="ode-in-multi-dimensions.html#finding-the-eigen-values"><i class="fa fa-check"></i><b>5.3.1</b> Finding the eigen values</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="ode-in-multi-dimensions.html"><a href="ode-in-multi-dimensions.html#examples"><i class="fa fa-check"></i><b>5.4</b> Examples</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="ode-in-multi-dimensions.html"><a href="ode-in-multi-dimensions.html#lotka-volterra"><i class="fa fa-check"></i><b>5.4.1</b> Lotka Volterra</a></li>
+<li class="chapter" data-level="5.4.2" data-path="ode-in-multi-dimensions.html"><a href="ode-in-multi-dimensions.html#rozenzweig-mcarthur-model"><i class="fa fa-check"></i><b>5.4.2</b> Rozenzweig-McArthur model</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="overview.html"><a href="overview.html#chaos"><i class="fa fa-check"></i><b>6</b> About Chaos</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/McCannLab/aboutDE" target="blank">Published with bookdown on <i class="fa fa-github" aria-hidden="true"></i> </a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Differential Equations for ecologists</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="continuous-ode-in-one-dimension" class="section level1">
+<h1><span class="header-section-number">Chapter 4</span> Continuous ODE in one dimension</h1>
+<div id="general-terminology" class="section level2">
+<h2><span class="header-section-number">4.1</span> General terminology</h2>
+<p><span class="math display">\[\frac{dx}{dt} = \dot{x} = x&#39; = f(x,t, \Theta)\]</span></p>
+<p>where:</p>
+<ul>
+<li><code>x</code> is a state variable (<em>e.g.</em> a population of one species)</li>
+<li><code>t</code> stands for time</li>
+<li><code>Θ</code> includes all the parameters</li>
+<li><code>f</code> is a transformation</li>
+</ul>
+</div>
+<div id="linear-case" class="section level2">
+<h2><span class="header-section-number">4.2</span> Linear case</h2>
+<p><span class="math display">\[
+\left\{
+\begin{array}{l}
+  {dx \over dt} = ax,\\
+  x(0) = x_0
+\end{array}
+\right.
+\]</span></p>
+<p>where <span class="math inline">\(a\)</span> is a real number. Note that here Θ = a.</p>
+<ul>
+<li>Phase portrait</li>
+<li>star nodes</li>
+<li>non-isolated fixed points</li>
+<li>stable node</li>
+<li>saddle node</li>
+<li>different rates</li>
+<li>non-trivial equilibrium sometimes called interior</li>
+</ul>
+</div>
+<div id="study-case" class="section level2">
+<h2><span class="header-section-number">4.3</span> Study case</h2>
+<p>Use local stability analysis on the logistic (all equilibria) and analytically calculate lambda. What is the stability response to r? For the following Budworm model done by D. Ludwig,</p>
+<p><span class="math display">\[\frac{dN}{dt} = rN\left(1-\frac{N}{K}\right) - \frac{BN^2}{N^2 + N_0}\]</span></p>
+<p>where the budworm, N, grows logistical but is consumed by a constant amount of predators (density B). Using dynamical systems theory: i) find local equilibria for K and B (assume r=1); ii) solve for the local stability of all relevant equilibria as a function of budworm carrying capacity, K, and the predator density, B. What bifurcations do we expect and when?</p>
+<p><em>Hint</em>: for insight it may help to do this graphically (and produce code dN/dt to check) consider the growth function (logistic term: rN(1-N/K)) and the mortality function (– BN2/(N2+No)) separately (i.e., note that where the growth function crosses the mortality function we have equilibria: plotting N versus these rates or terms of F(N) may therefore be useful).</p>
+<div id="expanding-the-equation" class="section level3">
+<h3><span class="header-section-number">4.3.1</span> Expanding the equation</h3>
+<p>Non trivial equilibrium:</p>
+<p><span class="math display">\[rN\left(1-\frac{N}{K}\right) = \frac{BN^2}{N^2 + N_0}\]</span></p>
+<p>or simply:</p>
+<p><span class="math display">\[r\left(1-\frac{N}{K}\right) = \frac{BN}{N^2 + N_0}\]</span></p>
+<p>this yields:</p>
+<p><span class="math display">\[-\frac{r}{K}N^3 + rN^2 + \left(r\frac{N_0}{K}-B\right)N - rN_0 = 0\]</span></p>
+<p>let’s divide by <span class="math inline">\(\frac{r}{K}\)</span>:</p>
+<p><span class="math display">\[-N^3 + KN^2 + \left(N_0-K\frac{B}{r}\right)N - KN_0 = 0\]</span></p>
+<p>Assuming <span class="math inline">\(r = 1\)</span>, <span class="math inline">\(K = 10\)</span>, Below are shown this curve for station</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">seqN &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="op">-</span><span class="dv">2</span>, <span class="dv">12</span>, .<span class="dv">1</span>)
+pol &lt;-<span class="st"> </span><span class="cf">function</span>(N, r, K, B, N0) {
+  <span class="cf">if</span> (<span class="op">!</span>B) {
+    <span class="co"># attack term does not exits</span>
+    out &lt;-<span class="st"> </span>K<span class="op">*</span>N<span class="op">-</span>N<span class="op">*</span>N
+  }  <span class="cf">else</span> {
+    <span class="cf">if</span> (<span class="op">!</span>N0) {
+      out &lt;-<span class="st"> </span>K<span class="op">*</span>N<span class="op">-</span>N<span class="op">*</span>N <span class="op">-</span><span class="st"> </span>B
+    } <span class="cf">else</span> out &lt;-<span class="st"> </span><span class="op">-</span>N<span class="op">^</span><span class="dv">3</span> <span class="op">+</span><span class="st"> </span>K<span class="op">*</span>N<span class="op">*</span>N <span class="op">+</span><span class="st"> </span>(N0<span class="op">-</span>K<span class="op">*</span>(B<span class="op">/</span>r))<span class="op">*</span>N <span class="op">+</span><span class="st"> </span><span class="op">-</span><span class="st"> </span>K<span class="op">*</span>N0
+  }
+  out
+}
+##
+cust_plot &lt;-<span class="st"> </span><span class="cf">function</span>(seqN, r, K, B, N0, main) {
+  <span class="kw">plot</span>(seqN, <span class="kw">pol</span>(seqN, r, K, B, N0), <span class="dt">type =</span> <span class="st">&quot;l&quot;</span>, <span class="dt">lwd =</span> <span class="dv">2</span>,
+  <span class="dt">main =</span> main, <span class="dt">xlab =</span> <span class="st">&quot;N&quot;</span>, <span class="dt">ylab =</span> <span class="kw">TeX</span>(<span class="st">&quot;</span><span class="ch">\\</span><span class="st">dot{N}&quot;</span>))
+  <span class="kw">abline</span>(<span class="dt">h=</span><span class="dv">0</span>, <span class="dt">v=</span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">10</span>), <span class="dt">lty=</span><span class="dv">2</span>)
+}
+
+<span class="kw">cust_plot</span>(seqN, <span class="op">-</span><span class="dv">1</span>, <span class="dv">10</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dt">main =</span> <span class="st">&quot;B = 0&quot;</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-3-1.png" width="672" style="display: block; margin: auto;" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cust_plot</span>(seqN, <span class="op">-</span><span class="dv">1</span>, <span class="dv">10</span>, <span class="dv">10</span>, <span class="dv">0</span>, <span class="dt">main =</span> <span class="st">&quot;B = 5; N0 = 0&quot;</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-3-2.png" width="672" style="display: block; margin: auto;" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cust_plot</span>(seqN, <span class="op">-</span><span class="dv">1</span>, <span class="dv">10</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dt">main =</span> <span class="st">&quot;B = 1; N0 = 2&quot;</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-3-3.png" width="672" style="display: block; margin: auto;" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cust_plot</span>(seqN, <span class="op">-</span><span class="dv">1</span>, <span class="dv">10</span>, <span class="dv">1</span>, <span class="dv">4</span>, <span class="dt">main =</span> <span class="st">&quot;B = 1; N0 = 4&quot;</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-3-4.png" width="672" style="display: block; margin: auto;" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cust_plot</span>(seqN, <span class="op">-</span><span class="dv">1</span>, <span class="dv">10</span>, <span class="dv">1</span>, <span class="dv">8</span>, <span class="dt">main =</span> <span class="st">&quot;B = 1; N0 = 8&quot;</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-3-5.png" width="672" style="display: block; margin: auto;" /></p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="mathematical-prerequisites.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ode-in-multi-dimensions.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/McCannLab/aboutDE/edit/devel/04-ODEonedim.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
