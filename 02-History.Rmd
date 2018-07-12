@@ -23,8 +23,6 @@ Generalization of the tangent.
 - R. Lipschitz (1832-1903)
 
 
-
-
 ### Using geometry
 
 - L. I. Fuchs (1833-1902)
@@ -86,8 +84,8 @@ solve problems in mathematical ecology. Linear Algebra and its Applications 398 
 ## Ref - Ecology
 
 
-- Volterra V (1926) Fluctuations in the abundance of a species considered mathematically. Na-
-ture 118 :558–560.
+- Volterra V (1926) Fluctuations in the abundance of a species considered mathematically.
+Nature 118 :558–560.
 
 -  Elton C, Nicholson M (1942) The ten-year cycle in numbers of the lynx in canada. The Journal
 of Animal Ecology 11 :215.

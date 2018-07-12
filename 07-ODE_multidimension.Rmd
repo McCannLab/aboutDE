@@ -15,7 +15,12 @@ where:
 
 ## Linear system
 
-Function `f` and its parameters `\theta`  
+Function `f` and its parameters `\theta`.
+<!-- degeneracy -->
+
+
+
+
 
 
 ### General case
@@ -150,7 +155,73 @@ $$\left(A - \lambda I_n\right) X  = 0_n$$
 
 ## Examples
 
-### Lotka-Volterra with`odeintr`
+> Symetry drives weird shit! (K. S. McCann)
+
+
+### Lotka Volterra
+
+#### Intro
+
+Classical model see @volterra_fluctuations_1927.
+
+Equations:
+
+$$
+\left\{
+\begin{array}{l}
+  \dot{R} = rR - aCR \\
+  \dot{C} = eaCR - mC
+\end{array}
+\right.
+$$
+
+
+#### First find equilibria and isolclines
+
+$$
+\left\{
+\begin{array}{l}
+  \dot{R} = 0 \Leftrightarrow C = r/a; C*=r/a \\
+  \dot{C} = 0 \Leftrightarrow R = m/(ea); R* = m/(ea)
+\end{array}
+\right.
+$$
+
+
+#### Jacobian matrix
+
+\begin{pmatrix}
+r-aC* & -aR* \\
+eaC* & eaR*-m
+\end{pmatrix}
+
+at the non-trivial equilibrium:
+
+\begin{pmatrix}
+0 & -aR* \\
+eaC* & 0
+\end{pmatrix}
+
+
+#### Diagonalisation
+
+
+\begin{pmatrix}
+-\lambda & -aR* \\
+eaC* & -\lambda
+\end{pmatrix}
+
+To get the two eigen values we must solve:
+
+$$\lambda^2 + mr = 0$$
+
+
+$$eig = \pm i \sqrt{mr}$$
+
+(pure imaginary, so => spins)
+
+
+#### Lotka-Volterra with`odeintr`
 
 [`odeint`](http://headmyshoulder.github.io/odeint-v2/) is a C++ library, Timothy H. Keitt (may ring the bell to some of you)
 has created a R package that wrapps around this library: [odeintr](https://github.com/thk686/odeintr).
@@ -165,3 +236,36 @@ obs = function(x, t) c(Prey = x[1], Predator = x[2], Ratio = x[1] / x[2])
 system.time({x = integrate_sys(dxdt, rep(2, 2), 20, 0.01, observer = obs)})
 plot(x[, c(2, 3)], type = "l", lwd = 2, col = "steelblue", main = "Lotka-Volterra Phase Plot")
 ```
+
+
+
+### Rozenzweig-McArthur model
+
+#### Into
+
+Another clasical, see @rosenzweig_graphical_1963 and @rosenzweig_paradox_1971
+and McCann's book!
+
+$$
+\left\{
+\begin{array}{l}
+  \dot{R} = rR(1-\frac{R}{K}) - \frac{aCR}{R+R0} \\
+  \dot{C} = \frac{eaCR}{R+R0} - mC
+\end{array}
+\right.
+$$
+
+
+
+<!-- 2Bedone
+transcritical happens when one equilibrimu always there
+Stable => unstabe
+recepies for transcritical!
+
+
+TC => unstable stable
+Hopf Bofirctution =>  imaginary / cycle for ever
+hop to K
+
+
+Do the bifurcation diagramm K against Cmin Cmax -->

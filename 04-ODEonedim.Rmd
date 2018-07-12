@@ -32,7 +32,7 @@ where $a$ is a real number. Note that here Θ = a.
 - stable node
 - saddle node
 - different rates
-
+- non-trivial equilibrium sometimes called interior
 
 
 ## Study case
